@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <h1>Cash Register Manager</h1>
+    <div class="quote">
+      <h5>
+        Enter bill and cash amount to find how to pay the return amount with
+        minimum notes.
+      </h5>
+    </div>
+
+    <div id="maindiv">
+      <label id="head">Bill Amount</label>
+      <br />
+      <input
+        placeholder="Bill Amount"
+        type="text"
+        id="BillAmount"
+        class="inputs"
+      />
+      <br />
+      <input
+        placeholder="Cash Amount"
+        type="text"
+        id="CashAmount"
+        class="inputs"
+      />
+      <br />
+      <button id="check">Check</button>
+      <br />
+      <br />
+      <br />
+      <span id="hide"></span>
+      <div id="table">
+        <label id="hidden" style="font-weight: 600;"
+          >Return amount: <span id="out"></span
+        ></label>
+        <table>
+          <tbody>
+            <tr>
+              <th>Number of Notes</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Notes</th>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+              <td class="numbernotes"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
